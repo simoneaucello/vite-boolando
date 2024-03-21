@@ -18,10 +18,10 @@
         <img src="../assets/img/boolean-logo.png" alt="">
       </div>
 
-      <div class="icons">
-        <i class="fa-regular fa-user"></i>  
-        <i class="fa-regular fa-heart"></i>  
-        <i class="fa-solid fa-cart-shopping"></i> 
+      <div >
+        <a href="#"><i class="fa-regular fa-user"></i></a>
+        <a href="#"><i class="fa-regular fa-heart"></i></a>
+        <a href="#"><i class="fa-solid fa-cart-shopping"></i> </a>       
        </div>
     </div>
   </header>
@@ -58,12 +58,10 @@ header{
   display: flex;
   justify-content: space-between;
   padding: 20px; 
-  .icons{
-    color: $link-color;
-    i{
+    a{
       padding: 0px 10px;
+      color: $link-color;
     }
-  }
 }
 
 </style>
