@@ -1,7 +1,12 @@
 <script>
   export default {
+    computed: {
+      socialMenu(){
+        return footerMenues.social;
+      },
     
   }
+}
 </script>
 
 <template>

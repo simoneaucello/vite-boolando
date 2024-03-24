@@ -1,5 +1,20 @@
 <script>
+import { headerMenues } from '../data/menues';
   export default {
+
+    computed: {
+      mainMenu(){
+        return headerMenues.main
+      }    ,
+      socialMenu(){
+        return headerMenues.social
+
+      }  
+    },
+
+    mounted(){
+
+    }
     
   }
 </script>
@@ -9,9 +24,8 @@
   <header>
     <div class="container menu">
       <ul>
-        <li><a href="#">Donna</a></li>
-        <li><a href="#">Uomo</a></li>
-        <li><a href="#">Bambini</a></li>
+        <li v-for="(item, index) in mainMenu"
+        :key='`h-${index}`'><a :href="item.href">{{item.text}}</a></li>
       </ul>
 
       <div class="logo">
@@ -34,7 +48,12 @@
 @use '../assets/scss/partials/variables' as *;
 
 header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 99;
   background-color: $bg-header;
+  box-shadow: 1px 1px 15px rgb(92, 92, 92);
   display: flex;
   justify-content: space-between;
   ul{
@@ -61,6 +80,9 @@ header{
     a{
       padding: 0px 10px;
       color: $link-color;
+      &:hover{
+        text-decoration: underline;;
+      }
     }
 }
 

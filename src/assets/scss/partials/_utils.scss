@@ -16,6 +16,13 @@ img{
 }
 
 .container{
-  width: 1200px;
+  width: 1300px;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.flexed{
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
 }
