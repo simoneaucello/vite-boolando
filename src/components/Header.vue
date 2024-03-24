@@ -8,7 +8,6 @@ import { headerMenues } from '../data/menues';
       }    ,
       socialMenu(){
         return headerMenues.social
-
       }  
     },
 

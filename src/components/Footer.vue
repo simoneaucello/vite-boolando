@@ -3,8 +3,7 @@
     computed: {
       socialMenu(){
         return footerMenues.social;
-      },
-    
+      },   
   }
 }
 </script>
